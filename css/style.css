@@ -1,0 +1,143 @@
+body {
+	background-image: url('../images/white-waves.png');
+	background-repeat: repeat;
+}
+nav a {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-family: 'Lato', sans-serif;
+	background: #3D441E;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 10px;
+	border: .25em solid #B6CFAE;
+	text-align: center;
+}
+
+a.current {
+	color: #3D441E;
+	background: #B6CFAE;
+	font-variant-caps: all-small-caps;
+	font-size: 150%;
+	border: .25em solid #3D441E;
+}
+a.skip {
+	position: relative;
+	left: -2000px;
+	z-index: -100px;
+}
+a.skip:focus {
+	border: 1px solid black;
+	position: relative;
+	left: 0;
+	z-index: 1px;
+}
+
+body header{
+	padding: 15px;
+}
+body main{
+	padding: 15px;
+	margin: 2%;
+	margin: 2em;
+}
+body main p{
+	height: auto;
+}
+
+h1 {
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	font-size: 2.5em;
+}
+h1.park {
+	
+}
+
+.page h2 {
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 10px 10px 40px 10px;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 1em;
+}
+footer {
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	font-size: 1.5em;
+	margin-bottom: 25px;
+}
+.address {
+	padding: .25em;
+}
+.phone {
+	padding: .25em;
+}
+footer img {
+	padding: 25px;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+.gallery img {
+	width: 100%;
+	text-align: center;
+}
+img {
+	max-width: 90%;
+}
+.tree {
+	text-align: center;
+	font-size: 1.75em;
+	color: #3D441E;
+	padding: 1em;
+}
+
+.bottom img{
+	max-height: 300px;
+	width: auto;
+	text-align: center;
+	display: inline-block;
+}
+
+
+@media screen and (min-width: 850px) {
+
+nav ul{
+		display: flex;
+		justify-content: flex-start;
+	}
+
+nav ul li{
+	display: inline-block;
+	width: 25%;
+	padding: 1em;
+	min-height: 15px;
+	line-height: 40px;
+	text-align: center;
+	}
+h1 {
+	font-size: 4em;
+}
+p {
+	width: 75%;
+}
+h2 {
+	padding-bottom: 10px;
+}
+.last {
+	display: block;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+	
+  }
